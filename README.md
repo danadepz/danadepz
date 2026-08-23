@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/run-banner.svg" alt="An armored warrior woman running through a retro obstacle course" width="100%" />
+<img src="./assets/run-banner.svg" alt="A woman in a jacket and jeans running through a retro obstacle course" width="100%" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=15&pause=1400&color=7EE787&center=true&vCenter=true&width=680&height=60&lines=PRESS+START;AN+IT+STUDENT+APPEARED!;DODGING+BUGS+SINCE+2023;IT+IS+BUILDING+SOMETHING..." alt="PRESS START" />
 
