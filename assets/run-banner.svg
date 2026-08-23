@@ -1,17 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250" role="img" aria-label="A woman in a jacket and jeans running and jumping through a retro obstacle course">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250" role="img" aria-label="A woman riding a hoverboard through a retro obstacle course">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1a1033"/>
-      <stop offset="45%" stop-color="#54246f"/>
-      <stop offset="78%" stop-color="#b5406a"/>
-      <stop offset="100%" stop-color="#f0803c"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="45%" stop-color="#161b22"/>
+      <stop offset="78%" stop-color="#1c2128"/>
+      <stop offset="100%" stop-color="#21262d"/>
     </linearGradient>
+    <radialGradient id="thrust">
+      <stop offset="0%" stop-color="#3fb950" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
     <pattern id="dirt" width="30" height="50" patternUnits="userSpaceOnUse">
-      <rect width="30" height="50" fill="#2d1b47"/>
-      <rect width="30" height="4" fill="#7ee787" opacity="0.9"/>
-      <rect y="4" width="30" height="3" fill="#3d8f52"/>
-      <rect x="26" y="7" width="2" height="43" fill="#241539"/>
-      <rect x="0" y="28" width="30" height="2" fill="#241539"/>
+      <rect width="30" height="50" fill="#161b22"/>
+      <rect width="30" height="4" fill="#3fb950" opacity="0.9"/>
+      <rect y="4" width="30" height="3" fill="#2ea043"/>
+      <rect x="26" y="7" width="2" height="43" fill="#0d1117"/>
+      <rect x="0" y="28" width="30" height="2" fill="#0d1117"/>
     </pattern>
     <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="1" fill="#ffffff" opacity="0.045"/>
@@ -22,20 +26,20 @@
   <g clip-path="url(#frame)" font-family="Courier New,Courier,monospace">
     <rect width="900" height="250" fill="url(#sky)"/>
 
-    <!-- retro banded sun, fixed -->
+    <!-- banded sun, fixed -->
     <g>
-      <circle cx="700" cy="158" r="74" fill="#ffd166" opacity="0.95"/>
-      <rect x="620" y="120" width="160" height="5" fill="#54246f" opacity="0.75"/>
-      <rect x="620" y="136" width="160" height="6" fill="#7a2f6c" opacity="0.75"/>
-      <rect x="620" y="154" width="160" height="7" fill="#a03a6a" opacity="0.75"/>
-      <rect x="620" y="174" width="160" height="9" fill="#b5406a" opacity="0.8"/>
-      <rect x="620" y="196" width="160" height="12" fill="#c9556c" opacity="0.85"/>
+      <circle cx="700" cy="158" r="74" fill="#d29922" opacity="0.95"/>
+      <rect x="620" y="120" width="160" height="5" fill="#161b22" opacity="0.75"/>
+      <rect x="620" y="136" width="160" height="6" fill="#161b22" opacity="0.75"/>
+      <rect x="620" y="154" width="160" height="7" fill="#1c2128" opacity="0.75"/>
+      <rect x="620" y="174" width="160" height="9" fill="#1c2128" opacity="0.8"/>
+      <rect x="620" y="196" width="160" height="12" fill="#262c36" opacity="0.85"/>
     </g>
 
     <!-- clouds, slowest layer -->
     <g opacity="0.35">
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-900 0" dur="60s" repeatCount="indefinite"/>
-      <g fill="#ffd9e8">
+      <g fill="#8b949e">
         <rect x="120" y="62" width="70" height="10"/><rect x="136" y="52" width="40" height="10"/>
         <rect x="520" y="88" width="56" height="9"/><rect x="534" y="79" width="30" height="9"/>
         <rect x="1020" y="62" width="70" height="10"/><rect x="1036" y="52" width="40" height="10"/>
@@ -46,13 +50,13 @@
     <!-- far hills -->
     <g>
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-900 0" dur="40s" repeatCount="indefinite"/>
-      <polygon fill="#2a1a4a" points="0,196 150,140 300,196 450,128 600,196 750,150 900,196 1050,140 1200,196 1350,128 1500,196 1650,150 1800,196 1800,250 0,250"/>
+      <polygon fill="#262c36" points="0,196 150,140 300,196 450,128 600,196 750,150 900,196 1050,140 1200,196 1350,128 1500,196 1650,150 1800,196 1800,250 0,250"/>
     </g>
 
     <!-- near hills -->
     <g>
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-900 0" dur="22s" repeatCount="indefinite"/>
-      <polygon fill="#1c1033" points="0,204 110,168 220,204 340,158 460,204 600,176 740,204 900,204 1010,168 1120,204 1240,158 1360,204 1500,176 1640,204 1800,204 1800,250 0,250"/>
+      <polygon fill="#1b2027" points="0,204 110,168 220,204 340,158 460,204 600,176 740,204 900,204 1010,168 1120,204 1240,158 1360,204 1500,176 1640,204 1800,204 1800,250 0,250"/>
     </g>
 
     <!-- ground + obstacles, fastest layer: 150 px/s -->
@@ -61,10 +65,10 @@
       <rect x="0" y="200" width="1800" height="50" fill="url(#dirt)"/>
 
       <!-- crates at 225 / 1125 -->
-      <g fill="#a0653a" stroke="#5e3620" stroke-width="2">
+      <g fill="#d29922" stroke="#9e6a03" stroke-width="2">
         <rect x="225" y="174" width="26" height="26"/><rect x="1125" y="174" width="26" height="26"/>
       </g>
-      <g stroke="#5e3620" stroke-width="2">
+      <g stroke="#9e6a03" stroke-width="2">
         <line x1="225" y1="174" x2="251" y2="200"/><line x1="251" y1="174" x2="225" y2="200"/>
         <line x1="1125" y1="174" x2="1151" y2="200"/><line x1="1151" y1="174" x2="1125" y2="200"/>
       </g>
@@ -75,89 +79,117 @@
       </g>
 
       <!-- spinning coins -->
-      <g fill="#ffd166" stroke="#c9922e" stroke-width="2">
-        <ellipse cx="450" cy="146" rx="9" ry="9"><animate attributeName="rx" values="9;2;9" dur="1.1s" repeatCount="indefinite"/></ellipse>
-        <ellipse cx="900" cy="146" rx="9" ry="9"><animate attributeName="rx" values="9;2;9" dur="1.1s" begin="0.35s" repeatCount="indefinite"/></ellipse>
-        <ellipse cx="1350" cy="146" rx="9" ry="9"><animate attributeName="rx" values="9;2;9" dur="1.1s" begin="0.7s" repeatCount="indefinite"/></ellipse>
+      <g fill="#d29922" stroke="#9e6a03" stroke-width="2">
+        <ellipse cx="450" cy="140" rx="9" ry="9"><animate attributeName="rx" values="9;2;9" dur="1.1s" repeatCount="indefinite"/></ellipse>
+        <ellipse cx="900" cy="140" rx="9" ry="9"><animate attributeName="rx" values="9;2;9" dur="1.1s" begin="0.35s" repeatCount="indefinite"/></ellipse>
+        <ellipse cx="1350" cy="140" rx="9" ry="9"><animate attributeName="rx" values="9;2;9" dur="1.1s" begin="0.7s" repeatCount="indefinite"/></ellipse>
       </g>
     </g>
 
-    <!-- ===== the runner: jacket and jeans, fixed at x=180, jumps every 3s ===== -->
+    <!-- ground shadow: stays on the ground, fades out while she is airborne -->
+    <ellipse cx="181" cy="203" rx="26" ry="4" fill="#010409">
+      <animate attributeName="opacity" values="0.45;0.12;0.45;0.45" keyTimes="0;0.1;0.2;1" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="rx" values="26;15;26;26" keyTimes="0;0.1;0.2;1" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- speed lines trailing behind the board -->
+    <g fill="#8b949e">
+      <rect x="120" y="176" width="18" height="2" opacity="0">
+        <animate attributeName="x" values="152;108" dur="0.7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0" dur="0.7s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="120" y="188" width="24" height="2" opacity="0">
+        <animate attributeName="x" values="150;100" dur="0.55s" begin="0.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.6;0" dur="0.55s" begin="0.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="120" y="166" width="14" height="2" opacity="0">
+        <animate attributeName="x" values="150;112" dur="0.85s" begin="0.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0" dur="0.85s" begin="0.4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- ===== rider + hoverboard. outer group jumps, inner group hovers ===== -->
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0; 0 -60; 0 0; 0 0" keyTimes="0; 0.1; 0.2; 1" dur="3s" repeatCount="indefinite" calcMode="spline" keySplines="0.15 0.6 0.4 1; 0.6 0 0.85 0.45; 0 0 1 1"/>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0; 0 3; 0 0" dur="1.6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1"/>
 
-      <ellipse cx="181" cy="202" rx="19" ry="4" fill="#0d0718" opacity="0.45"/>
+        <!-- thruster wash under the board -->
+        <ellipse cx="181" cy="201" rx="34" ry="7" fill="url(#thrust)">
+          <animate attributeName="opacity" values="0.9;0.45;0.9" dur="1.1s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse cx="164" cy="199" rx="7" ry="4" fill="#3fb950">
+          <animate attributeName="opacity" values="0.85;0.3;0.85" dur="0.6s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse cx="199" cy="199" rx="7" ry="4" fill="#3fb950">
+          <animate attributeName="opacity" values="0.3;0.85;0.3" dur="0.6s" repeatCount="indefinite"/>
+        </ellipse>
 
-      <!-- open jacket hem, catching the wind -->
-      <g>
-        <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
-        <polygon points="170,166 156,176 154,190 168,184" fill="#227f74"/>
-      </g>
-      <g>
-        <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
-        <polygon points="170,166 153,172 151,187 167,182" fill="#227f74"/>
-      </g>
+        <!-- hoverboard -->
+        <rect x="152" y="190" width="58" height="6" fill="#e6edf3"/>
+        <rect x="154" y="196" width="54" height="3" fill="#1f6feb"/>
+        <rect x="150" y="191" width="4" height="4" fill="#c9d1d9"/>
+        <rect x="208" y="191" width="4" height="4" fill="#c9d1d9"/>
+        <rect x="168" y="191" width="26" height="2" fill="#58a6ff"/>
 
-      <!-- ponytail, two-frame flutter -->
-      <g>
-        <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
-        <polygon points="172,146 154,142 146,150 158,156 172,158" fill="#c85a3a"/>
-        <polygon points="172,148 158,146 152,151 161,155 172,156" fill="#e0764f"/>
-      </g>
-      <g>
-        <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
-        <polygon points="172,146 153,149 145,158 159,159 172,158" fill="#c85a3a"/>
-        <polygon points="172,148 157,151 151,157 162,158 172,156" fill="#e0764f"/>
-      </g>
+        <!-- jacket hem, catching the wind -->
+        <g>
+          <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
+          <polygon points="168,154 154,164 152,178 166,172" fill="#1f6feb"/>
+        </g>
+        <g>
+          <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
+          <polygon points="168,154 151,160 149,175 165,170" fill="#1f6feb"/>
+        </g>
 
-      <!-- legs: jeans, frame A stride open -->
-      <g>
-        <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
-        <rect x="167" y="182" width="10" height="19" fill="#3a3f66"/>
-        <rect x="185" y="182" width="10" height="19" fill="#3a3f66"/>
-        <rect x="164" y="196" width="14" height="5" fill="#ffffff"/>
-        <rect x="185" y="196" width="14" height="5" fill="#ffffff"/>
-      </g>
-      <!-- legs: jeans, frame B stride closed -->
-      <g>
-        <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
-        <rect x="172" y="182" width="10" height="19" fill="#3a3f66"/>
-        <rect x="181" y="184" width="10" height="17" fill="#3a3f66"/>
-        <rect x="170" y="196" width="14" height="5" fill="#ffffff"/>
-        <rect x="181" y="195" width="14" height="5" fill="#ffffff"/>
-      </g>
+        <!-- ponytail streaming back -->
+        <g>
+          <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
+          <polygon points="170,134 152,130 144,138 156,144 170,146" fill="#db6d28"/>
+          <polygon points="170,136 156,134 150,139 159,143 170,144" fill="#f0883e"/>
+        </g>
+        <g>
+          <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
+          <polygon points="170,134 151,137 143,146 157,147 170,146" fill="#db6d28"/>
+          <polygon points="170,136 155,139 149,145 160,146 170,144" fill="#f0883e"/>
+        </g>
 
-      <!-- tee under an open jacket -->
-      <rect x="169" y="162" width="25" height="21" fill="#ffd9e8"/>
-      <rect x="166" y="161" width="7" height="22" fill="#2a9d8f"/>
-      <rect x="189" y="161" width="7" height="22" fill="#2a9d8f"/>
-      <rect x="166" y="160" width="30" height="4" fill="#227f74"/>
+        <!-- trailing arm -->
+        <rect x="161" y="155" width="8" height="7" fill="#58a6ff"/>
+        <rect x="153" y="157" width="9" height="7" fill="#ffcf9e"/>
 
-      <!-- head -->
-      <rect x="169" y="140" width="24" height="11" fill="#c85a3a"/>
-      <rect x="169" y="148" width="7" height="14" fill="#c85a3a"/>
-      <rect x="175" y="150" width="17" height="12" fill="#ffcf9e"/>
-      <rect x="187" y="149" width="6" height="5" fill="#c85a3a"/>
-      <rect x="184" y="154" width="4" height="4" fill="#2b1b2e"/>
+        <!-- legs, bent into a riding stance -->
+        <rect x="162" y="170" width="10" height="9" fill="#30363d"/>
+        <rect x="164" y="178" width="10" height="8" fill="#30363d"/>
+        <rect x="186" y="170" width="10" height="9" fill="#30363d"/>
+        <rect x="188" y="178" width="10" height="8" fill="#30363d"/>
+        <rect x="160" y="185" width="16" height="6" fill="#ffffff"/>
+        <rect x="186" y="185" width="16" height="6" fill="#ffffff"/>
 
-      <!-- arms, two-frame swing -->
-      <g>
-        <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
-        <rect x="190" y="165" width="7" height="8" fill="#2a9d8f"/>
-        <rect x="196" y="166" width="8" height="7" fill="#ffcf9e"/>
-      </g>
-      <g>
-        <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="0.26s" repeatCount="indefinite"/>
-        <rect x="166" y="167" width="7" height="8" fill="#2a9d8f"/>
-        <rect x="158" y="168" width="8" height="7" fill="#ffcf9e"/>
+        <!-- tee under an open jacket -->
+        <rect x="167" y="150" width="25" height="21" fill="#8b949e"/>
+        <rect x="164" y="149" width="7" height="22" fill="#58a6ff"/>
+        <rect x="187" y="149" width="7" height="22" fill="#58a6ff"/>
+        <rect x="164" y="148" width="30" height="4" fill="#1f6feb"/>
+
+        <!-- head -->
+        <rect x="167" y="128" width="24" height="11" fill="#db6d28"/>
+        <rect x="167" y="136" width="7" height="14" fill="#db6d28"/>
+        <rect x="173" y="138" width="17" height="12" fill="#ffcf9e"/>
+        <rect x="185" y="137" width="6" height="5" fill="#db6d28"/>
+        <rect x="182" y="142" width="4" height="4" fill="#0d1117"/>
+
+        <!-- leading arm, out for balance -->
+        <rect x="188" y="153" width="8" height="7" fill="#58a6ff"/>
+        <rect x="195" y="151" width="10" height="7" fill="#ffcf9e"/>
       </g>
     </g>
 
     <!-- HUD -->
-    <text x="28" y="40" fill="#ffd166" font-size="13" letter-spacing="2">SCORE 001204</text>
-    <text x="28" y="60" fill="#7ee787" font-size="11" letter-spacing="2">LIFE  ● ● ●</text>
+    <text x="28" y="40" fill="#d29922" font-size="13" letter-spacing="2">SCORE 001204</text>
+    <text x="28" y="60" fill="#3fb950" font-size="11" letter-spacing="2">LIFE  ● ● ●</text>
     <text x="450" y="46" text-anchor="middle" fill="#ffffff" font-size="27" font-weight="bold" letter-spacing="10">D A N A</text>
-    <text x="450" y="68" text-anchor="middle" fill="#ffd9e8" font-size="11" letter-spacing="4" opacity="0.85">STAGE 1-1  ·  FULL-STACK DEV</text>
+    <text x="450" y="68" text-anchor="middle" fill="#8b949e" font-size="11" letter-spacing="4" opacity="0.85">STAGE 1-1  ·  FULL-STACK DEV</text>
     <text x="872" y="40" text-anchor="end" fill="#ffffff" font-size="12" letter-spacing="1" opacity="0.9">TIME 0:47</text>
 
     <rect width="900" height="250" fill="url(#scan)"/>
