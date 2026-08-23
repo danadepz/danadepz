@@ -34,15 +34,6 @@
 
 <div align="center">
 
-### ▸ RUN HISTORY
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=danadepz&bg_color=0b0d16&color=7d8590&line=7ee787&point=e6edf3&area=true&area_color=7ee787&hide_border=true&custom_title=commits%20per%20day" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=danadepz&bg_color=0b0d16&color=7d8590&line=7ee787&point=e6edf3&area=true&area_color=7ee787&hide_border=true&custom_title=commits%20per%20day" alt="Commit activity" width="100%" />
-</picture>
-
-<br /><br />
-
 <sub><code>GAME OVER? no. CONTINUE? yes.</code></sub>
 
 </div>
