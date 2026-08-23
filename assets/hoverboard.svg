@@ -64,19 +64,52 @@
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-900 0" dur="6s" repeatCount="indefinite"/>
       <rect x="0" y="200" width="1800" height="50" fill="url(#dirt)"/>
 
-      <!-- crates at 225 / 1125 -->
-      <g fill="#d29922" stroke="#9e6a03" stroke-width="2">
-        <rect x="225" y="174" width="26" height="26"/><rect x="1125" y="174" width="26" height="26"/>
-      </g>
-      <g stroke="#9e6a03" stroke-width="2">
-        <line x1="225" y1="174" x2="251" y2="200"/><line x1="251" y1="174" x2="225" y2="200"/>
-        <line x1="1125" y1="174" x2="1151" y2="200"/><line x1="1151" y1="174" x2="1125" y2="200"/>
-      </g>
-      <!-- spikes at 675 / 1575 -->
-      <g fill="#c9d1d9" stroke="#6e7681" stroke-width="1.5">
-        <polygon points="663,200 673,176 683,200"/><polygon points="681,200 691,180 701,200"/>
-        <polygon points="1563,200 1573,176 1583,200"/><polygon points="1581,200 1591,180 1601,200"/>
-      </g>
+      <!-- bugs at 225 / 1125 -->
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="0.5s" repeatCount="indefinite"/>
+          <line x1="228" y1="184" x2="223" y2="176" stroke="#8b1a17" stroke-width="2"/>
+          <line x1="233" y1="182" x2="229" y2="174" stroke="#8b1a17" stroke-width="2"/>
+          <rect x="235" y="196" width="3" height="5" fill="#8b1a17"/>
+          <rect x="242" y="196" width="3" height="5" fill="#8b1a17"/>
+          <rect x="249" y="196" width="3" height="5" fill="#8b1a17"/>
+          <rect x="225" y="183" width="9" height="11" fill="#da3633"/>
+          <rect x="227" y="186" width="3" height="3" fill="#ffffff"/>
+          <rect x="233" y="180" width="21" height="16" fill="#f85149"/>
+          <rect x="242" y="180" width="2" height="16" fill="#8b1a17"/>
+          <rect x="236" y="184" width="4" height="4" fill="#8b1a17"/>
+          <rect x="246" y="187" width="4" height="4" fill="#8b1a17"/>
+        </g>
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="0.5s" repeatCount="indefinite"/>
+          <line x1="1128" y1="184" x2="1123" y2="176" stroke="#8b1a17" stroke-width="2"/>
+          <line x1="1133" y1="182" x2="1129" y2="174" stroke="#8b1a17" stroke-width="2"/>
+          <rect x="1135" y="196" width="3" height="5" fill="#8b1a17"/>
+          <rect x="1142" y="196" width="3" height="5" fill="#8b1a17"/>
+          <rect x="1149" y="196" width="3" height="5" fill="#8b1a17"/>
+          <rect x="1125" y="183" width="9" height="11" fill="#da3633"/>
+          <rect x="1127" y="186" width="3" height="3" fill="#ffffff"/>
+          <rect x="1133" y="180" width="21" height="16" fill="#f85149"/>
+          <rect x="1142" y="180" width="2" height="16" fill="#8b1a17"/>
+          <rect x="1136" y="184" width="4" height="4" fill="#8b1a17"/>
+          <rect x="1146" y="187" width="4" height="4" fill="#8b1a17"/>
+        </g>
+      <!-- error blocks at 661 / 1561 -->
+        <g>
+          <rect x="661" y="170" width="32" height="30" fill="#21262d" stroke="#f85149" stroke-width="2"/>
+          <g fill="#f85149">
+            <animate attributeName="opacity" values="1;1;0.25;1" dur="1.4s" begin="0s" repeatCount="indefinite"/>
+            <rect x="675" y="176" width="4" height="13"/>
+            <rect x="675" y="192" width="4" height="4"/>
+          </g>
+        </g>
+        <g>
+          <rect x="1561" y="170" width="32" height="30" fill="#21262d" stroke="#f85149" stroke-width="2"/>
+          <g fill="#f85149">
+            <animate attributeName="opacity" values="1;1;0.25;1" dur="1.4s" begin="0.7s" repeatCount="indefinite"/>
+            <rect x="1575" y="176" width="4" height="13"/>
+            <rect x="1575" y="192" width="4" height="4"/>
+          </g>
+        </g>
 
       <!-- spinning coins -->
       <g fill="#d29922" stroke="#9e6a03" stroke-width="2">
