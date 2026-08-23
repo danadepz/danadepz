@@ -80,8 +80,16 @@
 
       <!-- spinning coins -->
       <g fill="#d29922" stroke="#9e6a03" stroke-width="2">
-        <ellipse cx="450" cy="140" rx="9" ry="9"><animate attributeName="rx" values="9;2;9" dur="1.1s" repeatCount="indefinite"/></ellipse>
-        <ellipse cx="900" cy="140" rx="9" ry="9"><animate attributeName="rx" values="9;2;9" dur="1.1s" begin="0.35s" repeatCount="indefinite"/></ellipse>
+        <!-- snuffed out the instant it touches her at x=181, so it never trails out behind -->
+        <g>
+          <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.2989;0.3022;1" dur="6s" repeatCount="indefinite"/>
+          <ellipse cx="450" cy="140" rx="9" ry="9"><animate attributeName="rx" values="9;2;9" dur="1.1s" repeatCount="indefinite"/></ellipse>
+        </g>
+        <g>
+          <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.7989;0.8022;1" dur="6s" repeatCount="indefinite"/>
+          <ellipse cx="900" cy="140" rx="9" ry="9"><animate attributeName="rx" values="9;2;9" dur="1.1s" begin="0.35s" repeatCount="indefinite"/></ellipse>
+        </g>
+        <!-- still inbound when the loop wraps; it becomes the 450 coin, so it stays lit -->
         <ellipse cx="1350" cy="140" rx="9" ry="9"><animate attributeName="rx" values="9;2;9" dur="1.1s" begin="0.7s" repeatCount="indefinite"/></ellipse>
       </g>
     </g>
@@ -183,6 +191,18 @@
         <rect x="188" y="153" width="8" height="7" fill="#58a6ff"/>
         <rect x="195" y="151" width="10" height="7" fill="#ffcf9e"/>
       </g>
+    </g>
+
+    <!-- pickup sparkle: fires at the exact moment a coin is taken -->
+    <g stroke="#d29922" stroke-width="2" fill="none" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0.55;0;0" keyTimes="0;0.585;0.598;0.625;0.665;1" dur="3s" repeatCount="indefinite"/>
+      <circle cx="181" cy="140" r="4">
+        <animate attributeName="r" values="4;4;6;15;15;4" keyTimes="0;0.585;0.598;0.645;0.665;1" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <line x1="181" y1="123" x2="181" y2="130"/>
+      <line x1="181" y1="150" x2="181" y2="157"/>
+      <line x1="164" y1="140" x2="171" y2="140"/>
+      <line x1="191" y1="140" x2="198" y2="140"/>
     </g>
 
     <!-- HUD -->
