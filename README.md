@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hoverboard.svg" alt="A woman riding a hoverboard through a retro obstacle course" width="100%" />
+<img src="./assets/hoverboard-v4.svg" alt="A woman riding a hoverboard through a retro obstacle course" width="100%" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=15&pause=1400&color=7EE787&center=true&vCenter=true&width=680&height=60&lines=PRESS+START;AN+IT+DEVELOPER+APPEARED!;DODGING+BUGS+SINCE+2023;BUILDING+ACTIVKLASS+%26+TOOLS...;READY+FOR+PLAYER+2!" alt="PRESS START" />
 
